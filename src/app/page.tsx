@@ -1,4 +1,4 @@
-import Head from 'next/head';
+import Head from "next/head";
 
 const Home = () => {
   return (
@@ -51,7 +51,7 @@ const Home = () => {
         <p>© 2024 PlayFight. All Rights Reserved.</p>
       </footer>
     </div>
-  );
+   );
 };
 
 export default Home;
