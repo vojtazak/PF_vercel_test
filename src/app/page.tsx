@@ -1,4 +1,4 @@
-// Add "use client" at the very top of the file
+
 "use client";
 
 import Head from "next/head";
@@ -18,18 +18,18 @@ const Home = () => {
       <header className="flex justify-between items-center p-6 bg-black text-white">
         <div className="text-2xl font-bold tracking-wider">PlayFight</div>
         <div className="hidden lg:flex space-x-8">
-          <a href="#about" className="hover:text-orange-500">
+          <Link href="/#about" className="hover:text-orange-500">
             About Us
-          </a>
-          <a href="#workshops" className="hover:text-orange-500">
+          </Link>
+          <Link href="/#workshops" className="hover:text-orange-500">
             Workshops
-          </a>
-          <a href="#projects" className="hover:text-orange-500">
+          </Link>
+          <Link href="/#projects" className="hover:text-orange-500">
             Projects
-          </a>
-          <a href="#contact" className="hover:text-orange-500">
+          </Link>
+          <Link href="/#contact" className="hover:text-orange-500">
             Contact
-          </a>
+          </Link>
           <div className="flex space-x-2">
             <button className="hover:text-orange-500">EN</button>
             <button className="hover:text-orange-500">CZ</button>
@@ -63,7 +63,7 @@ const Home = () => {
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <nav className="bg-black text-white p-6 lg:hidden">
-          <a href="#about" className="block py-2 hover:text-orange-500">
+          <a href="#about" className="block py-2 hover:text-orange-500"> 
             About Us
           </a>
           <a href="#workshops" className="block py-2 hover:text-orange-500">
