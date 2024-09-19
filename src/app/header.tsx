@@ -4,6 +4,7 @@ import { useState } from "react";
 const Header = () => {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
     return (
+      <div>
         <header className="flex justify-between items-center p-6 bg-black text-white">
         <div className="text-2xl font-bold tracking-wider">PlayFight</div>
         <div className="hidden lg:flex space-x-8">
@@ -70,8 +71,8 @@ const Header = () => {
           </div>
         </nav>
       )}
-
-    )
+    </div>
+  )
 }
 
 export default Header;
