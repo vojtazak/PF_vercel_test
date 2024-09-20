@@ -6,7 +6,11 @@ const Header = () => {
     return (
       <div>
         <header className="flex justify-between items-center p-6 bg-black text-white">
-        <div className="text-2xl font-bold tracking-wider">PlayFight</div>
+          <Link href="/"> 
+            <div className="text-2xl font-bold tracking-wider cursor-pointer"> 
+              PlayFight
+            </div>
+          </Link>
         <div className="hidden lg:flex space-x-8">
           <Link href="/#about" className="hover:text-orange-500">
             About Us
