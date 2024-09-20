@@ -18,11 +18,11 @@ const Carousel = () => {
 
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    const prevSlide = () => {
+    {/*const prevSlide = () => {
         const isFirstSlide = currentIndex === 0;
         const newIndex = isFirstSlide ? images.length - 1 : currentIndex - 1;
         setCurrentIndex(newIndex);
-    };
+    };*/}
 
     const nextSlide = () => {
         const isLastSlide = currentIndex === images.length - 1;
