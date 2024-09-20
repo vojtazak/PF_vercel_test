@@ -4,32 +4,23 @@
 import Head from "next/head";
 import Link from "next/link";
 import Header from './header';
+import Carousel from './carousel_hero';
+
+
 
 const Home = () => {
 
   return (
     <div>
       <Head>
-        <title>PlayFight - Unleash Creativity</title>
+        <title>PlayFight</title>
       </Head>
 
       <Header />
 
       {/* Hero Section */}
-      <section
-        className="h-screen bg-cover bg-center flex items-center justify-center text-center text-white"
-        style={{ backgroundImage: "url('/hero-bg.jpg')" }}
-      >
-        <div>
-          <h1 className="text-6xl font-bold mb-6">Welcome to PlayFight</h1>
-          <p className="text-xl mb-10">Unleash Your Creativity</p>
-          <a
-            href="#about"
-            className="inline-block px-6 py-3 bg-orange-500 hover:bg-orange-600 text-white font-bold rounded-md transition"
-          >
-            Learn More
-          </a>
-        </div>
+      <section>
+        <Carousel />
       </section>
 
       {/* Clickable Image Section */}
