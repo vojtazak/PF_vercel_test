@@ -3,7 +3,7 @@ import { useState, useEffect} from 'react';
 const Carousel = () => {
     const images = [
         {
-            src: '/etna placeholder.jpg',
+            src: 'https://via.placeholder.com/800x400?text=Image+1',
             caption: 'Welcome to PlayFight',
           },
           {
@@ -58,7 +58,7 @@ const Carousel = () => {
                       className="w-full h-full object-cover"
                     />
                     {/* Text overlay */}
-                    <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white">
+                    <div className="absolute inset-0 flex items-center justify-center bg-opacity-50 ">
                       <p className="text-lg font-bold">{images[idx].caption}</p>
                     </div>
                   </div>

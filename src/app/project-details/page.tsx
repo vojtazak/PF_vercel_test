@@ -1,7 +1,7 @@
 "use client";
 
 import Head from "next/head";
-import Header from '../header';
+import Header from '@/components/header';
 import Carousel from '../carousel_hero';
 
 
@@ -12,11 +12,8 @@ const ProjectDetails = () => {
             <title>Project-details</title>
         </Head>
       <Header />
-
-      {/* Hero Section */}
-      <section >
-        <Carousel />
-      </section>
+      <Carousel />
+     
 
       {/* Workshops Section */}
       <section id="workshops" className="py-24 bg-gray-900 text-white text-center">

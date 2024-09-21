@@ -5,7 +5,7 @@ const Header = () => {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
     return (
       <div>
-        <header className="flex justify-between items-center p-6 bg-black text-white">
+        <header className="flex justify-between items-center p-6">
           <Link href="/"> 
             <div className="text-2xl font-bold tracking-wider cursor-pointer"> 
               PlayFight
@@ -56,7 +56,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <nav className="bg-black text-white p-6 lg:hidden">
+        <nav className="p-6 lg:hidden">
           <a href="#about" className="block py-2 hover:text-orange-500"> 
             About Us
           </a>

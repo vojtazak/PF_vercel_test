@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0d0abb;
+  --foreground: #e41717;
   --primary: #000000;
   --secondary: #000000;
   --text-color: var(--foreground);
@@ -13,8 +13,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #3405a1;
+    --foreground: #ce1313;
     --text-color: var(--foreground);
   }
 }
