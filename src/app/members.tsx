@@ -10,7 +10,7 @@ const teamMembers: TeamMember[] = [
   {
     name: 'Jane Doe',
     role: 'CEO',
-    imageSrc: 'https://via.placeholder.com/300', // Replace with actual image URL
+    imageSrc: '/images/etna placeholder.jpg', // Replace with actual image URL
   },
   {
     name: 'John Smith',
@@ -31,11 +31,11 @@ const teamMembers: TeamMember[] = [
 
 const TeamGrid = () => {
   return (
-    <div className="py-12 sm:py-16 lg:py-20">
+    <div id="about" className="py-12 sm:py-16 lg:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center">
-          <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">Meet Our Team</h2>
-          <p className="mt-4 text-lg leading-6 text-gray-500">
+        <div className="text-center mt-10">
+          <h2 className="text-3xl font-extrabold sm:text-4xl">Meet Our Team</h2>
+          <p className="mt-4 text-lg leading-6">
             We are a group of professionals dedicated to delivering the best service.
           </p>
         </div>
@@ -48,8 +48,8 @@ const TeamGrid = () => {
                 src={member.imageSrc}
                 alt={member.name}
               />
-              <h3 className="mt-6 text-lg font-medium text-gray-900">{member.name}</h3>
-              <p className="text-gray-500">{member.role}</p>
+              <h3 className="mt-6 text-lg font-medium">{member.name}</h3>
+              <p className="">{member.role}</p>
             </div>
           ))}
         </div>

@@ -1,28 +1,22 @@
-import { useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
 
 const Carousel = () => {
     const images = [
         {
-            src: 'https://via.placeholder.com/800x400?text=Image+1',
+            src: '/images/etna placeholder.jpg',
             caption: 'Welcome to PlayFight',
-          },
-          {
-            src: 'https://via.placeholder.com/800x400?text=Image+2',
+        },
+        {
+            src: '/images/main.jpg',
             caption: 'This is the second image caption',
-          },
-          {
+        },
+        {
             src: 'https://via.placeholder.com/800x400?text=Image+3',
             caption: 'This is the third image caption',
-          },
+        },
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
-
-    {/*const prevSlide = () => {
-        const isFirstSlide = currentIndex === 0;
-        const newIndex = isFirstSlide ? images.length - 1 : currentIndex - 1;
-        setCurrentIndex(newIndex);
-    };*/}
 
     const nextSlide = () => {
         const isLastSlide = currentIndex === images.length - 1;
@@ -42,26 +36,26 @@ const Carousel = () => {
 
         // Cleanup interval when component unmounts or on re-render
         return () => clearInterval(interval);
-    }, [currentIndex]); // Dependency on currentIndex
+    }, [currentIndex]);
 
     return (
-        <div className="relative w-full max-w-xl mx-auto overflow-hidden">
+        <div className="relative w-full mx-auto overflow-hidden">
             <div
                 className="flex transition-transform duration-500"
                 style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
-                {images.map((src, idx) => (
+                {images.map((image, idx) => (
                     <div key={idx} className="carousel-item w-full flex-shrink-0 relative">
-                    <img
-                      src={images[idx].src}
-                      alt={`Image ${idx + 1}`}
-                      className="w-full h-full object-cover"
-                    />
-                    {/* Text overlay */}
-                    <div className="absolute inset-0 flex items-center justify-center bg-opacity-50 ">
-                      <p className="text-lg font-bold">{images[idx].caption}</p>
+                        <img
+                            src={image.src}
+                            alt={`Image ${idx + 1}`}
+                            className="w-full h-[1000px] object-cover" // Full width and adjustable height
+                        />
+                        {/* Text overlay */}
+                        <div className="absolute inset-0 flex items-center justify-center bg-opacity-50">
+                            <p className="text-lg font-bold text-white">{image.caption}</p>
+                        </div>
                     </div>
-                  </div>
                 ))}
             </div>
 
@@ -70,12 +64,11 @@ const Carousel = () => {
                 {images.map((_, idx) => (
                     <div
                         key={idx}
-                        onClick={() => goToSlide(idx)} //Make dot clickable 
-                        className={`cursor-pointer h-1 w-8 ${currentIndex === idx ? 'bg-blue-500' : 'bg-gray-300'}`}
+                        onClick={() => goToSlide(idx)} // Make dot clickable
+                        className={`cursor-pointer h-1 w-8 ${currentIndex === idx ? 'bg-[var(--secondary)]' : 'bg-gray-300'}`}
                     />
                 ))}
             </div>
-
         </div>
     );
 };

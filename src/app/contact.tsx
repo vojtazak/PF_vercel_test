@@ -2,15 +2,15 @@ import React from 'react';
 
 const ContactSection = () => {
   return (
-    <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
+    <div id="contact" className="py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
         
         {/* Contact Form */}
-        <div className="bg-gray-50 p-8 rounded-lg shadow-lg">
-          <h2 className="text-2xl font-extrabold text-gray-900">Contact Us</h2>
+        <div className="p-8 rounded-lg shadow-2xl">
+          <h2 className="text-2xl font-extrabold">Contact Us</h2>
           <form action="#" method="POST" className="mt-6 space-y-6">
             <div>
-              <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="name" className="block text-sm font-medium">
                 Name
               </label>
               <input
@@ -23,7 +23,7 @@ const ContactSection = () => {
               />
             </div>
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="email" className="block text-sm font-medium">
                 Email
               </label>
               <input
@@ -36,7 +36,7 @@ const ContactSection = () => {
               />
             </div>
             <div>
-              <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+              <label htmlFor="message" className="block text-sm font-medium">
                 Message
               </label>
               <textarea
@@ -59,26 +59,26 @@ const ContactSection = () => {
         </div>
 
         {/* Contact Info */}
-        <div className="p-8 rounded-lg shadow-lg flex flex-col justify-center">
-          <h2 className="text-2xl font-extrabold text-gray-900">Contact Information</h2>
+        <div className="p-8 rounded-lg shadow-2xl flex flex-col justify-center">
+          <h2 className="text-2xl font-extrabold">Contact Information</h2>
           <div className="mt-6 space-y-4">
             <div className="flex items-center">
-              <svg className="h-6 w-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 2v6h6M21 13v8a2 2 0 01-2 2H5a2 2 0 01-2-2v-8M7 10v6M17 10v6M10 14l2-2 2 2M13 14v6"></path>
               </svg>
-              <span className="ml-3 text-base text-gray-500">1234 Main St, Anytown, USA</span>
+              <span className="ml-3 text-base">1234 Main St, Anytown, USA</span>
             </div>
             <div className="flex items-center">
-              <svg className="h-6 w-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7 4 7-4M5 6l7-4 7 4M5 10v10l7 4 7-4V10M12 6v10"></path>
               </svg>
-              <span className="ml-3 text-base text-gray-500">contact@example.com</span>
+              <span className="ml-3 text-base">contact@example.com</span>
             </div>
             <div className="flex items-center">
-              <svg className="h-6 w-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5h18M9 3v2M15 3v2m-6 16h6M9 12h6m-6 4h6"></path>
               </svg>
-              <span className="ml-3 text-base text-gray-500">+1 (234) 567-890</span>
+              <span className="ml-3 text-base">+1 (234) 567-890</span>
             </div>
           </div>
         </div>

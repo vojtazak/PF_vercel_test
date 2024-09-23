@@ -12,7 +12,7 @@ import Footer from '@/components/footer';
 const Home = () => {
 
   return (
-    <div>
+    <div className="pt-[80px]">
       <Head>
         <title>PlayFight</title>
       </Head>

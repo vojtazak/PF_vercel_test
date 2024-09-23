@@ -5,28 +5,25 @@ const Header = () => {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
     return (
       <div>
-        <header className="flex justify-between items-center p-6">
+        <header className="flex justify-between items-center p-6 fixed top-0 left-0 w-full z-50 bg-[var(--secondary)]">
           <Link href="/"> 
-            <div className="text-2xl font-bold tracking-wider cursor-pointer"> 
-              PlayFight
+            <div className="text-2xl font-bold tracking-wider cursor-pointer text-[var(--primary)] hover:shadow ml-12"> 
+            • PlayFight •
             </div>
           </Link>
-        <div className="hidden lg:flex space-x-8">
-          <Link href="/#about" className="hover:text-orange-500">
+        <div className="hidden lg:flex font-bold space-x-8 mr-12">
+          <Link href="/#about" className="hover:text-[var(--primary)]">
             About Us
           </Link>
-          <Link href="/#workshops" className="hover:text-orange-500">
+          <Link href="/#workshops" className="hover:text-[var(--primary)]">
             Workshops
           </Link>
-          <Link href="/#projects" className="hover:text-orange-500">
-            Projects
-          </Link>
-          <Link href="/#contact" className="hover:text-orange-500">
+          <Link href="/#contact" className="hover:text-[var(--primary)]">
             Contact
           </Link>
           <div className="flex space-x-2">
-            <button className="hover:text-orange-500">EN</button>
-            <button className="hover:text-orange-500">CZ</button>
+            <button className="hover:text-[var(--primary)]">EN</button>
+            <button className="hover:text-[var(--primary)]">CZ</button>
           </div>
         </div>
 
@@ -34,7 +31,7 @@ const Header = () => {
         <div className="lg:hidden">
           <button
             onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
-            className="text-white focus:outline-none"
+            className="focus:outline-none"
           >
             <svg
               className="w-6 h-6"
@@ -57,21 +54,21 @@ const Header = () => {
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <nav className="p-6 lg:hidden">
-          <a href="#about" className="block py-2 hover:text-orange-500"> 
+          <a href="#about" className="block py-2 hover:text-[var(--primary)]"> 
             About Us
           </a>
-          <a href="#workshops" className="block py-2 hover:text-orange-500">
+          <a href="#workshops" className="block py-2 hover:text-[var(--primary)]">
             Workshops
           </a>
-          <a href="#projects" className="block py-2 hover:text-orange-500">
+          <a href="#projects" className="block py-2 hover:text-[var(--primary)]">
             Projects
           </a>
-          <a href="#contact" className="block py-2 hover:text-orange-500">
+          <a href="#contact" className="block py-2 hover:text-[var(--primary)]">
             Contact
           </a>
           <div className="flex space-x-2 py-2">
-            <button className="hover:text-orange-500">EN</button>
-            <button className="hover:text-orange-500">CZ</button>
+            <button className="hover:text-[var(--primary)]">EN</button>
+            <button className="hover:text-[var(--primary)]">CZ</button>
           </div>
         </nav>
       )}
