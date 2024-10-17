@@ -8,6 +8,8 @@ import Members from './members';
 import Workshops from './workshops_gal';
 import Contact from './contact';
 import Footer from '@/components/footer';
+import FAQ from './faq';
+
 
 const Home = () => {
 
@@ -20,6 +22,7 @@ const Home = () => {
       <Carousel /> {/* welcome pics */}
       <Members /> {/* team members */}
       <Workshops /> {/* workshops */}
+      <FAQ /> {/* faq */}
       <Contact /> {/* contact */}
       <Footer /> {/* footer */}
     </div>
